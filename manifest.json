@@ -1,0 +1,41 @@
+{
+
+"manifest_version": 2,
+"name": "Permareader",
+"version": "1.0",
+
+"description": "Enables or disables Firefox's built-in Reader Mode globally - no more pointless toggling.",
+
+"icons": {
+    "48": "icons/out48.jpg",
+    "96": "icons/out96.jpg"
+},
+
+"permissions": [
+    "*://*/*",
+    "activeTab",
+    "tabs",
+    "menus",
+    "storage"
+],
+
+"browser_specific_settings": {
+    "gecko": {
+        "id": "permareader@troyrennie.ca"
+    }
+},
+
+"browser_action": {
+
+    "default_icon": {
+        "48": "icons/out48.jpg",
+        "96": "icons/out96.jpg"
+    },
+        "default_title": "Permareader: Toggle"
+    },
+
+    "background": {
+        "scripts": ["permareader-bg.js"]
+    }
+
+}
